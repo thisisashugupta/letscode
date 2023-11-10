@@ -4,23 +4,34 @@ import Link from 'next/link';
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="bg-black-500 p-4">
-      <div className="container mx-auto">
-        <ul className="flex space-x-4 text-blue">
+    <nav className="fixed left-0 top-0 w-screen p-4 bg-slate-500 text-white">
+      <div className="max-w-7xl container flex items-center justify-between mx-auto">
+        <ul className="flex items-center space-x-4">
           <li>
             <Link href="/">
-              Letscode
+              <div className='font-semibold text-slate-950 text-xl'>Letscode</div>
             </Link>
           </li>
           <li>
             <Link href="/problemset/all">
-              Problems
+              <div>Problems</div>
             </Link>
           </li>
           <li>
             <Link href="/">
-              Contact
+              <div>Contact</div>
             </Link>
+          </li>
+        </ul>
+        <ul className="flex items-center space-x-4">
+          <li>
+            <Link href="/"><div>photo</div></Link>
+          </li>
+          <li>
+            <Link href="/"><div>streak</div></Link>
+          </li>
+          <li>
+            <Link href="/"><div>other</div></Link>
           </li>
         </ul>
       </div>
