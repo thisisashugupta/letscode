@@ -5,7 +5,7 @@ import Link from 'next/link';
 const Navbar: React.FC = () => {
   return (
     <nav className="fixed left-0 top-0 w-screen p-4 bg-slate-500 text-white">
-      <div className="max-w-7xl container flex items-center justify-between mx-auto">
+      <div className="max-w-6xl container flex items-center justify-between mx-auto">
         <ul className="flex items-center space-x-4">
           <li>
             <Link href="/">
